@@ -1,6 +1,6 @@
 
 import React from "react"
-import Stack from "@mui/material/Stack"
+import Link from "next/link"
 
 interface ITemProps{
     id?:number,
@@ -12,11 +12,11 @@ interface ITemProps{
 const SideBarItem=({id,icon,title,link}:ITemProps)=>{
     
     return(
-        <Stack className=" opacity-40 hover:opacity-100 transition-all duration-500 hover:text-purple-400 hover:cursor-pointer " alignItems="center" justifyContent="center" spacing="0.3rem">
+        <Link href={link} className=" opacity-40 hover:opacity-100 transition-all duration-500 hover:text-purple-400 flex flex-col hover:cursor-pointer items-center justify-center gap-1 " >
             {icon}
             <p className="text-xs font-medium">{title}</p>
 
-        </Stack>
+        </Link>
     )
 }
 export default SideBarItem

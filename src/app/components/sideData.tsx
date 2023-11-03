@@ -8,7 +8,7 @@ const sideBarData=[
         id:1,
         icon:<MdDashboard size={25} />,
         title:"Dashboard",
-        link:""
+        link:"/"
 
     },
     {
@@ -48,7 +48,7 @@ const sideBarData=[
         id:7,
         icon:<MdAdminPanelSettings size={25}/>,
         title:"Admins",
-        link:""
+        link:"/admins"
     }
 ]
 export default sideBarData

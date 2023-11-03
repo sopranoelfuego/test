@@ -15,7 +15,8 @@ const config: Config = {
       },
       colors:{
         "grey":"#F3F3F3",
-        "green":"#FADEAB",
+        "green":"#40a25a",
+        "yellow":"#FADEAB",
         "purple":{
          200: "#EDE5F4",
          400:"#520193"
