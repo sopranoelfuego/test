@@ -33,14 +33,14 @@ function SingleAdmin({ admin }: IProps) {
             {
                 admin.id === 4 && (
 
-            <div className="absolute bottom-0 p-4 bg-white z-20  shadow-xl rounded-lg right-8">
-                <Box className="w-5 h-5 absolute right-0 bottom-44 shadow-xl transform bg-green">
+            <div className="absolute bottom-9 p-4 bg-white z-20  shadow-xl rounded-lg right-8">
+                <Box className=" absolute right-3 bottom-44 border-solid shadow-xl   bg-green">
                     
                 </Box>
-                <ul className="text-lg opacity-80 px-6 py-2 hover:cursor-pointer ">
-                    <li className="text-lg opacity-80  py-2 hover:cursor-pointer">Edit Profile</li>
-                    <li className="text-lg opacity-80  py-2 hover:cursor-pointer">De-activate</li>
-                    <li className="text-lg opacity-80 text-red-900 py-2 hover:cursor-pointer">Delete</li>
+                <ul className="text-lg opacity-80 px-4  hover:cursor-pointer ">
+                    <li className="text-lg  pt-1 pb-2 hover:cursor-pointer">Edit Profile</li>
+                    <li className="text-lg  py-2 hover:cursor-pointer">De-activate</li>
+                    <li style={{color:"red"}} className="text-lg pt-2 pb-1 hover:cursor-pointer">Delete</li>
                 </ul>
             </div>
                 )
