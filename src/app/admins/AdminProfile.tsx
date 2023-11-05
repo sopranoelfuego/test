@@ -13,7 +13,7 @@ function AdminProfile() {
   };
 
   return (
-    <div className="flex-1 flex flex-col rounded-md h-full bg-white ">
+    <div className="flex-1 flex flex-col rounded-md  max-w-[70rem] h-full bg-white ">
       <AdminHeaderProfile />
       <Divider />
       <AdminProfileInfo />

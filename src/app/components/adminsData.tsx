@@ -44,7 +44,7 @@ const adminsData:IADSingle[]=[
     },
     {
         id:4,
-        name:"Antony Mendes  ",
+        name:"Antony Mendez  ",
         src:"will.jpg",
         role:"ADMIN-0018",
         status:'INACTIVATE',
@@ -54,7 +54,7 @@ const adminsData:IADSingle[]=[
     },
     {
         id:5,
-        name:"Antony Mendes ",
+        name:"George Moreno ",
         src:"will.jpg",
         status:'ACTIVE',
         role:"ADMIN-0017",
@@ -63,8 +63,26 @@ const adminsData:IADSingle[]=[
 
     },
     {
-        id:5,
+        id:6,
         name:"Ashley Ray ",
+        src:"will.jpg",
+        role:"ADMIN-0012",
+        status:'ACTIVE',
+        time:"27 juin",
+        link:"/"
+
+    },
+        {id:7,
+        name:"Micheal Ortega ",
+        src:"will.jpg",
+        role:"ADMIN-0012",
+        status:'ACTIVE',
+        time:"27 juin",
+        link:"/"
+
+    },
+        {id:8,
+        name:"Willie Gonzalez ",
         src:"will.jpg",
         role:"ADMIN-0012",
         status:'ACTIVE',

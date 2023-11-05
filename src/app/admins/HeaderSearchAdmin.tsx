@@ -12,7 +12,7 @@ function HeaderSearchAdmin() {
     <>
       <div className=" w-full h-20 bg-white p-3 ">
         <Box className="w-full flex px-6 gap-4 items-center justify-center">
-          <div className="bg-grey flex-1 flex text-xl  opacity-70 items-center px-5 py-3 gap-4 rounded-lg justify-center">
+          <div className="bg-grey flex-1 flex text-xl  opacity-70 items-center px-5 py-2 gap-4 rounded-lg justify-center">
             <MdSearch size={25} className="opacity-70" />
             <input
               className="bg-transparent flex-1 outline-none"

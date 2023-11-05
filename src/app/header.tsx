@@ -12,13 +12,13 @@ const Header = () => {
         
             <Box className="mx-7">
 
-        <Badge color="secondary" variant="dot">
-          <MdNotificationsNone size={30} className="opacity-80" />
+        <Badge color="error" variant="dot">
+          <MdNotificationsNone size={34} className="opacity-80" />
         </Badge>
             </Box>
         <Box className="flex items-center justify-between gap-4">
-          <p className="text-lg font-medium">
-            hello,<span className="text-purple-400">Jacob</span>
+          <p className="text-base font-semibold ">
+            Hello,<span className="text-purple-400">Jacob</span>
           </p>
           <Box className="flex items-center justify-center gap-1">
 
