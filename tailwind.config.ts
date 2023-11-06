@@ -18,6 +18,10 @@ const config: Config = {
         "grey":"#F3F3F3",
         "green":"#40a25a",
         "yellow":"#fcc203",
+        "orange":{
+          100:"#FCF3E8",
+          400:"#E67F40"
+        },
         "purple":{
          200: "#EDE5F4",
          400:"#520193"
