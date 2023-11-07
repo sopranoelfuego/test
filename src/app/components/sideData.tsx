@@ -6,47 +6,47 @@ import {MdDashboard,MdOutlineSupportAgent,MdOutlineHandshake,MdStore,MdLibraryBo
 const sideBarData=[
     {
         id:1,
-        icon:<MdDashboard size={25} />,
+        icon:<MdDashboard size={30} />,
         title:"Dashboard",
         link:"/"
 
     },
     {
         id:2,
-        icon:<MdOutlineSupportAgent size={25}/>,
+        icon:<MdOutlineSupportAgent size={30}/>,
         title:"Agents",
-        link:""
+        link:"/agents"
 
     },
     {
         id:3,
-        icon:<MdOutlineHandshake size={25}/>,
+        icon:<MdOutlineHandshake size={30}/>,
         title:"Providers",
-        link:""
+        link:"/Providers"
 
     },
     {
         id:4,
-        icon:<MdStore size={25}/>,
+        icon:<MdStore size={30}/>,
         title:"Stores",
-        link:""
+        link:"/stores"
 
     },
     {
         id:5,
-        icon:<MdLibraryBooks size={25}/>,
+        icon:<MdLibraryBooks size={30}/>,
         title:"Reports",
-        link:""
+        link:"/reports"
     },
     {
         id:6,
-        icon:<MdBarChart size={25}/>,
+        icon:<MdBarChart size={30}/>,
         title:"Transactions",
-        link:""
+        link:"/transactions"
     },
     {
         id:7,
-        icon:<MdAdminPanelSettings size={25}/>,
+        icon:<MdAdminPanelSettings size={30}/>,
         title:"Admins",
         link:"/admins"
     }

@@ -1,13 +1,12 @@
-"use client";
 
 import Box from "@mui/material/Box";
 import FirstCharts from "./components/firstCharts";
 import SecondCharts from "./components/secondCharts";
 import { MdExpandMore,MdCalendarToday } from "react-icons/md";
-
+import ThirdCharts from "./components/thirdCharts";
 
 export default function Home() {
-
+   
   return (
     <Box className=" box-border flex flex-1 mx-12  max-h-[50rem] overflow-hidden">
       <Box className=" w-full   max-h-[50rem] overflow-y-auto ">
@@ -35,6 +34,9 @@ export default function Home() {
     </Box>
       <FirstCharts/>
       <SecondCharts/>
+      <ThirdCharts/>
+      
+      
       </Box>
     </Box>
   );

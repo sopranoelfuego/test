@@ -114,9 +114,9 @@ const SecondCharts = () => {
   };
 
   return (
-    <div className="w-full max-h-[28rem]  my-4 flex items-center justify-evenly overflow-hidden p-2 bg-white">
-      <div className="w-[60rem]  overflow-hidden p-6">
-        <Box className="flex items-center justify-between">
+    <div className="w-full rounded-md md:max-h-[26rem] sm:max-h-max  my-4 flex items-center px-0 justify-center overflow-hidden pt-4 bg-white">
+      <div className="flex-[60]  overflow-hidden p-6">
+        <Box className="flex items-center justify-between md:pr-8">
           <Box className="flex items-center gap-5 justify-center">
             <Box className="p-3 bg-orange-100 rounded-full">
               <MdSupportAgent size={32} className="text-orange-400" />
@@ -156,6 +156,8 @@ const SecondCharts = () => {
             </Box>
           </Box>
         </Box>
+        <Box className="w-full max-w-[56rem]">
+
         <ApexChart
           //   @ts-ignore
           options={options}
@@ -163,20 +165,21 @@ const SecondCharts = () => {
           type="area"
           height={200}
         />
+        </Box>
       </div>
 
       <div className="h-56 w-[2px] relative bg-grey ">
         <div className="block absolute top-[50%] w-3 h-3 right[2px] rounded-full border-l-white bg-white border-2 border-solid z-10 border-gray-200"></div>
       </div>
 
-      <Box>
-        <Box className=" w-full gap-4 flex items-center justify-end   py-1 ">
+      <Box className="flex-[40%]">
+        <Box className=" w-full gap-4 flex items-center justify-end   pr-4 ">
           <p className="text-xs opacity-80 font-semibold">All Sales</p>
-          <MdExpandMore size={23} />
+          <MdExpandMore size={21} />
         </Box>
 
-        <Box className="flex items-center ">
-          <Box className=" w-[26rem]">
+        <Box className="flex w-full items-center justify-center gap-6 p-6 ">
+          <Box className="">
             <ApexChart
               // @ts-ignore
               options={donutOptions}
@@ -186,7 +189,7 @@ const SecondCharts = () => {
             />
           </Box>
 
-          <Box className="flex items-start flex-col justify-start gap-2 flex-1">
+          <Box className="flex gap-4  flex-col ">
             <Box className="flex flex-col justify-end items-start">
               <div className="flex items-center gap-2  justify-end">
                 <div className="w-3 h-2 rounded-md bg-blue-600 p-0 m-0"></div>

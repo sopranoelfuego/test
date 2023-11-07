@@ -1,12 +1,17 @@
+"use client"
+
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import Avatar from "@mui/material/Avatar";
 import Badge from "@mui/material/Badge";
 import { MdNotificationsNone,MdKeyboardArrowDown } from "react-icons/md";
+ import { usePathname } from "next/navigation";
+
 const Header = () => {
+   const path=usePathname()
   return (
     <Box className="flex-1 bg-white max-h-24 px-12 flex justify-between items-center">
-      <p className="text-3xl font-extrabold">Admins</p>
+      <p className="text-3xl font-extrabold">{path.split('/').pop()?.trim().length === 0?"Dashboard":path.split('/').pop()}</p>
       <Box className="flex h-full  items-center justify-between min-w-fit">
         <Divider orientation="vertical" variant="middle" flexItem />
         

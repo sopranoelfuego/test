@@ -70,26 +70,26 @@ const FirstCharts = () => {
   const donutOptions = {
     chart: {
       type: "donut",
-      width:200,
+      width: 200,
     },
     legend: {
       show: false,
     },
-     plotOptions: {
-                pie: {
-                  donut: {
-                    labels: {
-                      show: true,
-                      total: {
-                        showAlways: true,
-                        show: true,
-                           label: 'Total Active hrs',
-                         fontWeight: 600,
-                      }
-                    }
-                  }
-                }
-              },
+    plotOptions: {
+      pie: {
+        donut: {
+          labels: {
+            show: true,
+            total: {
+              showAlways: true,
+              show: true,
+              label: "Total Active hrs",
+              fontWeight: 600,
+            },
+          },
+        },
+      },
+    },
     responsive: [
       {
         breakpoint: 480,
@@ -106,9 +106,9 @@ const FirstCharts = () => {
   };
 
   return (
-    <div className="w-full rounded-md max-h-[26rem]  my-4 flex items-center justify-evenly overflow-hidden pt-4 bg-white">
-      <div className="w-[60rem]  overflow-hidden p-6">
-        <Box className="flex items-center justify-between">
+    <div className="w-full rounded-md max-h-[26rem]  my-4 flex items-center px-0 justify-center overflow-hidden pt-4 bg-white">
+      <div className="flex-[60]  overflow-hidden p-6">
+        <Box className="flex items-center justify-between md:pr-8">
           <Box className="flex items-center gap-5 justify-center">
             <Box className="p-3 bg-orange-100 rounded-full">
               <MdSupportAgent size={32} className="text-orange-400" />
@@ -139,56 +139,57 @@ const FirstCharts = () => {
             </Box>
           </Box>
         </Box>
+        <Box className="w-full max-w-[56rem]">
+
         <ApexChart
           //   @ts-ignore
           options={options}
           series={series}
           type="area"
-          height={200}
+          
+          height={250}
         />
+        </Box>
       </div>
-      
-      <div className="h-56 w-[2px] relative bg-grey " >
-      <div className="block absolute top-[50%] w-3 h-3 right[2px] rounded-full border-l-white bg-white border-2 border-solid z-10 border-gray-200"></div>
 
+     <div className="h-56 w-[2px] relative bg-grey ">
+        <div className="block absolute top-[50%] w-3 h-3 right[2px] rounded-full border-l-white bg-white border-2 border-solid z-10 border-gray-200"></div>
       </div>
-      
-      
-      <Box className="flex items-center ">
 
-      <Box className=" w-[26rem]">
-        <ApexChart
-          // @ts-ignore
-          options={donutOptions}
-          series={seriesDonut}
-          type="donut"
-          height={300}
+      <Box className="flex flex-[40]  items-center justify-center gap-6 p-6">
+        <Box className=" ">
+          <ApexChart
+            // @ts-ignore
+            options={donutOptions}
+            series={seriesDonut}
+            type="donut"
+            height={300}
           />
+        </Box>
+        <Box className=" flex flex-col gap-4">
+          <Box className="flex flex-col justify-end items-start">
+            <div className="flex items-center gap-2  justify-end">
+              <div className="w-3 h-2 rounded-md bg-blue-600 p-0 m-0"></div>
+              <p className="opacity-70 text-sm">Active</p>
+            </div>
+            <p className="font-semibold">7.3 hrs</p>
+          </Box>
+          <Box className="flex flex-col justify-end  items-start">
+            <div className="flex items-center gap-2 justify-end">
+              <div className="w-3 h-2 rounded-md bg-green p-0 m-0"></div>
+              <p className="opacity-70 text-sm">Deactivated</p>
+            </div>
+            <p className="font-semibold">0 hr</p>
+          </Box>
+          <Box className="flex flex-col justify-end items-start">
+            <div className="flex items-center gap-2 justify-end">
+              <div className="w-3 h-2 rounded-md bg-orange-400 p-0 m-0"></div>
+              <p className="opacity-70 text-sm">Inactive</p>
+            </div>
+            <p className="font-semibold">0 hr</p>
+          </Box>
+        </Box>
       </Box>
-      <Box className="flex items-start flex-col justify-start gap-4 flex-1">
-            <Box className="flex flex-col justify-end items-start">
-              <div className="flex items-center gap-2  justify-end">
-                <div className="w-3 h-2 rounded-md bg-blue-600 p-0 m-0"></div>
-                <p className="opacity-70 text-sm">Active</p>
-              </div>
-              <p className="font-semibold">7.3 hrs</p>
-            </Box>
-            <Box className="flex flex-col justify-end  items-start">
-              <div className="flex items-center gap-2 justify-end">
-                <div className="w-3 h-2 rounded-md bg-green p-0 m-0"></div>
-                <p className="opacity-70 text-sm">Deactivated</p>
-              </div>
-              <p className="font-semibold">0 hr</p>
-            </Box>
-            <Box className="flex flex-col justify-end items-start">
-              <div className="flex items-center gap-2 justify-end">
-                <div className="w-3 h-2 rounded-md bg-orange-400 p-0 m-0"></div>
-                <p className="opacity-70 text-sm">Inactive</p>
-              </div>
-              <p className="font-semibold">0 hr</p>
-            </Box>
-          </Box>
-          </Box>
     </div>
   );
 };
