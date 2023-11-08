@@ -1,6 +1,5 @@
 "use client";
 
-import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
 import dynamic from "next/dynamic";
 import { MdSupportAgent } from "react-icons/md";
@@ -106,7 +105,7 @@ const FirstCharts = () => {
   };
 
   return (
-    <div className="w-full rounded-md max-h-[26rem]  my-4 flex items-center px-0 justify-center overflow-hidden pt-4 bg-white">
+    <div className="w-full rounded-md max-h-[26rem]  my-4 flex items-center px-0 justify-center overflow-hidden  bg-white">
       <div className="flex-[60]  overflow-hidden p-6">
         <Box className="flex items-center justify-between md:pr-8">
           <Box className="flex items-center gap-5 justify-center">

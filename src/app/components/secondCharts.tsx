@@ -114,7 +114,7 @@ const SecondCharts = () => {
   };
 
   return (
-    <div className="w-full rounded-md md:max-h-[26rem] sm:max-h-max  my-4 flex items-center px-0 justify-center overflow-hidden pt-4 bg-white">
+    <div className="w-full rounded-md max-h-[26rem]   flex items-center px-0 justify-center overflow-hidden  bg-white">
       <div className="flex-[60]  overflow-hidden p-6">
         <Box className="flex items-center justify-between md:pr-8">
           <Box className="flex items-center gap-5 justify-center">
@@ -163,7 +163,7 @@ const SecondCharts = () => {
           options={options}
           series={series}
           type="area"
-          height={200}
+          height={250}
         />
         </Box>
       </div>
@@ -172,7 +172,7 @@ const SecondCharts = () => {
         <div className="block absolute top-[50%] w-3 h-3 right[2px] rounded-full border-l-white bg-white border-2 border-solid z-10 border-gray-200"></div>
       </div>
 
-      <Box className="flex-[40%]">
+      <Box className="flex-[40%] h-fit">
         <Box className=" w-full gap-4 flex items-center justify-end   pr-4 ">
           <p className="text-xs opacity-80 font-semibold">All Sales</p>
           <MdExpandMore size={21} />
