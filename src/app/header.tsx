@@ -11,7 +11,8 @@ const Header = () => {
    const path=usePathname()
   return (
     <Box className="flex-1 bg-white max-h-24 px-12 flex justify-between items-center">
-      <p className="text-3xl font-extrabold">{path.split('/').pop()?.trim().length === 0?"Dashboard":path.split('/').pop()}</p>
+      {/* @ts-ignore */}
+      <p className="text-3xl font-extrabold">{path.split('/').pop()?.trim().length === 0?"Dashboard":path?.split('/').pop()?.toString().charAt(0).toUpperCase() + path?.split('/').pop()?.toString()?.slice(1)}</p>
       <Box className="flex h-full  items-center justify-between min-w-fit">
         <Divider orientation="vertical" variant="middle" flexItem />
         
@@ -37,7 +38,7 @@ const Header = () => {
         </Box>
       </Box>
     </Box>
-  );
+  );  
 };
 
 export default Header;

@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
+
 import Box from "@mui/material/Box";
-import Divider from "@mui/material/Divider";
 import  IconButton  from "@mui/material/IconButton";
 import {MdEdit,MdOutlineEmail,MdClose} from "react-icons/md"
 function AdminHeaderProfile() {
@@ -14,8 +12,8 @@ function AdminHeaderProfile() {
   };
 
   return (
-    <>
-      <Box className="w-full h-20 mb-0 pb flex items-center px-6 justify-between">
+    
+      <Box className="w-full h-20 mb-0  pb flex items-center px-6 justify-between">
         <Box
           sx={{
             
@@ -43,7 +41,7 @@ function AdminHeaderProfile() {
 
         </Box>
       </Box>
-              </>
+
     
   );
 }

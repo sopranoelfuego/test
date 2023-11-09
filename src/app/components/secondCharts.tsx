@@ -172,8 +172,8 @@ const SecondCharts = () => {
         <div className="block absolute top-[50%] w-3 h-3 right[2px] rounded-full border-l-white bg-white border-2 border-solid z-10 border-gray-200"></div>
       </div>
 
-      <Box className="flex-[40%] h-fit">
-        <Box className=" w-full gap-4 flex items-center justify-end   pr-4 ">
+      <Box className="flex-[40%] h-fit p-6">
+        <Box className=" w-full gap-4 flex items-center justify-end">
           <p className="text-xs opacity-80 font-semibold">All Sales</p>
           <MdExpandMore size={21} />
         </Box>
@@ -199,28 +199,28 @@ const SecondCharts = () => {
             </Box>
             <Box className="flex flex-col justify-end  items-start">
               <div className="flex items-center gap-2  justify-end">
-                <div className="w-3 h-2 rounded-md bg-blue-600 p-0 m-0"></div>
+                <div className="w-3 h-2 rounded-md bg-[#FD8499] p-0 m-0"></div>
                 <p className="opacity-70 text-base">Electricity</p>
               </div>
               <p className="text-base font-semibold">2,320,920 BIF</p>
             </Box>
             <Box className="flex flex-col justify-end  items-start">
               <div className="flex items-center gap-2  justify-end">
-                <div className="w-3 h-2 rounded-md bg-blue-600 p-0 m-0"></div>
+                <div className="w-3 h-2 rounded-md bg-[#AC96FE] p-0 m-0"></div>
                 <p className="opacity-70 text-sm">Airtime</p>
               </div>
               <p className="font-semibold">1,320,920 BIF</p>
             </Box>
             <Box className="flex flex-col justify-end items-start">
               <div className="flex items-center gap-2  justify-end">
-                <div className="w-3 h-2 rounded-md bg-blue-600 p-0 m-0"></div>
+                <div className="w-3 h-2 rounded-md bg-[#FDE36C] p-0 m-0"></div>
                 <p className="opacity-70 text-sm">Tv</p>
               </div>
               <p className="font-semibold">1,160,480 BIF</p>
             </Box>
             <Box className="flex flex-col justify-end items-start">
               <div className="flex items-center gap-2  justify-end">
-                <div className="w-3 h-2 rounded-md bg-blue-600 p-0 m-0"></div>
+                <div className="w-3 h-2 rounded-md bg-[#67FECA] p-0 m-0"></div>
                 <p className="opacity-70 text-sm">Other Payments</p>
               </div>
               <p className="font-semibold">1,160,480 BIF</p>

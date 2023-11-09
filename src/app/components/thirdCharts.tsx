@@ -8,8 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Stack from '@mui/material/Stack';
 import TableCell  from '@mui/material/TableCell';
-// import { styled } from '@mui/material/styles';
-// import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TextField, Typography, tableCellClasses } from "@mui/material";
+import {MdArrowDownward,MdArrowUpward} from "react-icons/md"
 
 import {
   MdBrightnessHigh,
@@ -60,7 +59,7 @@ export const AgentsTable=()=>{
 
   return(
     <Table className="w-full">
-       <TableHead className="bg-gray-200 p-0">
+       <TableHead className="bg-gray-100 p-0">
          <TableRow className="p-0">
             <TableCell>Ranking</TableCell>
             <TableCell align="left">Agent</TableCell>
@@ -73,9 +72,9 @@ export const AgentsTable=()=>{
           {agentData?.map(a=>(
           <TableRow key={a.id}  className="hover:bg-orange-200   transition-all duration-[400ms] font-600 border-none">
             <TableCell sx={{fontWeight:"700"}} >
-              <Stack direction="row">
-              <p className="border w-8 h-8 flex bg-inherit items-center justify-center my-auto rounded-full">{a.ranking}</p>
-
+              <Stack direction="row" alignItems="center" spacing={1}>
+              <p className="border w-9 h-9 bg-gray-100 flex bg-inherit items-center justify-center my-auto rounded-full">{a.ranking}</p>
+              {a?.situation === "up" ?<MdArrowUpward className="text-green font-semibold" size={12}/>:  <MdArrowDownward className="text-red font-semibold" size={12}/>}
               </Stack>
               </TableCell>
             <TableCell sx={{fontWeight:"700"}} align="left">{a.agent}</TableCell>
@@ -133,22 +132,24 @@ const ThirdCharts = () => {
       </Box>
       {/* END LEFT */}
       {/* RIGHT */}
-      <Box className="flex-1 h-full rounded-md bg-white p-6">
+      <Box className="flex-1 h-full rounded-md flex flex-col gap-2 bg-white ">
         {/* HEAD */}
-        <Box className="w-full flex items-center justify-between">
+        <Box className="w-full flex items-center justify-between p-6">
           <Box className="flex items-center gap-5 justify-center">
             <Box className="p-3 bg-orange-100 rounded-full">
               <MdSafetyCheck size={32} className="text-orange-400" />
             </Box>
             <p className="font-semibold text-base">Leaderboard</p>
           </Box>
-          <Box className=" w-full gap-4 flex items-center justify-end   pr-4 ">
+          <Box className=" w-full gap-4 flex items-center justify-end ">
             <p className="text-xs opacity-80 font-semibold">Agents</p>
             <MdExpandMore size={21} />
           </Box>
         </Box>
         {/* END HEAD */}
+        {/* AGENTS TABLE */}
         <AgentsTable/>
+        {/* END AGENTS TABLE */}
       </Box>
       {/* END RIGHT */}
     </Box>

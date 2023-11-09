@@ -7,7 +7,7 @@ const sideBarData=[
     {
         id:1,
         icon:<MdDashboard size={30} />,
-        title:"Dashboard",
+        title:"",
         link:"/"
 
     },

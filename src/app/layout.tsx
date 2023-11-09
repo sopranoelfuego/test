@@ -8,7 +8,7 @@ import Footer from "./footer";
 import { MdFontDownload } from "react-icons/md";
 
 import { Inter } from "next/font/google";
-import sideBarData from "./components/sideData";
+import sideBarData from "./utils/sideData";
 import SideBarItem from "./components/SideBarSingleItem";
 
 const inter = Inter({ subsets: ["latin"] });
