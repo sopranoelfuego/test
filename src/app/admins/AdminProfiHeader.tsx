@@ -25,8 +25,8 @@ function AdminHeaderProfile() {
           }}
         >
 
-            <div className=" h-full  text-start text-lg  px-8 opacity-70" >Summary</div>
-            <div className=" h-full border-b-2 text-start text-lg font-semibold px-8 border-b-yellow" >Profile</div>
+            <div className=" h-full  text-start text-lg  px-8 opacity-70 transition-opacity duration-[400ms] hover:cursor-pointer hover:opacity-100" >Summary</div>
+            <div className=" h-full border-b-2 text-start text-lg font-semibold px-8 border-b-yellow transition-opacity duration-[400ms] hover:cursor-pointer hover:opacity-100" >Profile</div>
         
         </Box>
         <Box className="flex items-center gap-2 justify-center">

@@ -64,7 +64,7 @@ const SingleAdmin = ({ admin }: IProps): React.ReactNode => {
         />
       </Badge>
   
-      <Box className="flex-1 w-full  flex items-start justify-between">
+      <Box className="flex-1 w-full flex items-start justify-between">
         <div>
           <Link href={`/admins/${admin.id}`} className="text-lg">{admin.name}</Link>
           <p className="opacity-50 text-sm">{admin.role}</p>
@@ -110,7 +110,6 @@ const SingleAdmin = ({ admin }: IProps): React.ReactNode => {
       <IconButton
         onClick={handleClick}
         size="small"
-        sx={{ ml: 2 }}
         aria-controls={open ? "account-menu" : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}

@@ -10,6 +10,8 @@ import { MdFontDownload } from "react-icons/md";
 import { Inter } from "next/font/google";
 import sideBarData from "./utils/sideData";
 import SideBarItem from "./components/SideBarSingleItem";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,16 +25,17 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const path=usePathname()
   return (
     <html lang="en">
       <body className={inter.className}>
         <Box className=" min-h-screen box-border flex bg-grey ">
-          <Box className="bg-white pt-8 w-23  border px-3 border-r flex flex-col gap-20 items-center justify-items-start">
-            <Box>
-              <MdFontDownload size={32} className="text-purple-400" />
-            </Box>
+          <Box className="bg-white pt-8   border px-3 border-r flex flex-col gap-20 items-center justify-items-start">
+            <Link href="/" className="hover:cursor-pointer sticky top-14">
+              <MdFontDownload size={42} className="text-purple-400" />
+            </Link>
 
-            <Box className="flex flex-col gap-4  ">
+            <Box className="flex flex-col w-23 sticky top-40 gap-4  ">
               {sideBarData?.map((item) => (
                 <SideBarItem
                   key={item.id}
@@ -46,7 +49,8 @@ export default function RootLayout({
           <Box className="flex flex-col flex-1 gap-9  ">
             <Header />
             {children}
-            <Footer />
+            {path.split('/').pop()?.trim().length !== 0 && <Footer />}
+            
           </Box>
         </Box>
       </body>

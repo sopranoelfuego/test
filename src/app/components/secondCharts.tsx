@@ -114,9 +114,9 @@ const SecondCharts = () => {
   };
 
   return (
-    <div className="w-full rounded-md max-h-[26rem]   flex items-center px-0 justify-center overflow-hidden  bg-white">
-      <div className="flex-[60]  overflow-hidden p-6">
-        <Box className="flex items-center justify-between md:pr-8">
+    <div className="w-full rounded-md max-h-[26rem] h-[26rem]  flex items-center px-0 justify-center overflow-hidden  bg-white">
+      <div className="flex-[60] h-full  flex flex-col overflow-hidden p-6">
+        <Box className="flex items-center  justify-between md:pr-8">
           <Box className="flex items-center gap-5 justify-center">
             <Box className="p-3 bg-orange-100 rounded-full">
               <MdSupportAgent size={32} className="text-orange-400" />
@@ -156,7 +156,7 @@ const SecondCharts = () => {
             </Box>
           </Box>
         </Box>
-        <Box className="w-full max-w-[56rem]">
+        <Box className="w-full flex-1  max-w-[56rem]">
 
         <ApexChart
           //   @ts-ignore
@@ -172,7 +172,7 @@ const SecondCharts = () => {
         <div className="block absolute top-[50%] w-3 h-3 right[2px] rounded-full border-l-white bg-white border-2 border-solid z-10 border-gray-200"></div>
       </div>
 
-      <Box className="flex-[40%] h-fit p-6">
+      <Box className="flex-[40%] h-full  p-6">
         <Box className=" w-full gap-4 flex items-center justify-end">
           <p className="text-xs opacity-80 font-semibold">All Sales</p>
           <MdExpandMore size={21} />
@@ -189,7 +189,7 @@ const SecondCharts = () => {
             />
           </Box>
 
-          <Box className="flex gap-4  flex-col ">
+          <Box className="flex lg:gap-4 md:gap-1 h-full flex-col">
             <Box className="flex flex-col justify-end items-start">
               <div className="flex items-center gap-2  justify-end">
                 <div className="w-3 h-2 rounded-md bg-blue-600 p-0 m-0"></div>

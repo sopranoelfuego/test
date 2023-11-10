@@ -12,9 +12,10 @@ function AdminProfileInfo() {
       <Badge
         overlap="circular"
         anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+        className="z-10"
         badgeContent={
-          <IconButton className="bg-white p-3 hover:bg-white shadow-lg">
-            <MdEdit size={18} className="text-black" />
+          <IconButton className="bg-white p-3 z-10 hover:bg-white shadow-lg">
+            <MdEdit size={18} className="text-black z-10" />
           </IconButton>
         }
       >
@@ -22,6 +23,7 @@ function AdminProfileInfo() {
           alt="Remy Sharp"
           src="will.jpg"
           sx={{ width: 120, height: 120 }}
+          className="z-0"
         />
       </Badge>
       {/* ===== INFO BLOC HERE =================*/}
@@ -45,8 +47,8 @@ function AdminProfileInfo() {
             </Stack>
             {/* end top */}
             <Stack direction="row"  justifyContent="space-between">
-              <p className="text-lg opacity-80">trans@Shora.co</p>
-              <small className="opacity-50 text-sm font-semibold">Joined: <span className="opacity-40 text-base">4 days ago.</span></small>
+              <p className="text-lg">trans@Shora.co</p>
+              <small className="opacity-60 text-sm font-semibold">Joined: <span className="opacity-50 text-base">4 days ago.</span></small>
             </Stack>
         </Box>
         {/* END TOP */}
@@ -54,23 +56,23 @@ function AdminProfileInfo() {
         <Box className="flex-1 flex flex-col justify-evenly ">
           <Stack>
             <small className="opacity-40 text-sm">Phone Number</small>
-            <p className="text-lg opacity-80">+257 79 28 4124</p>
+            <p className="text-lg">+257 79 28 4124</p>
           </Stack>
           <Stack>
             <small className="opacity-40 text-sm">Home Address</small>
-            <p className="text-lg opacity-80">24ème Ave,<br/>Bujumbura,Burundi</p>
+            <p className="text-lg">24ème Ave,<br/>Bujumbura,Burundi</p>
           </Stack>
           <Stack>
             <small className="opacity-40 text-sm">Permission</small>
-            <p className="text-lg opacity-80">Can View</p>
+            <p className="text-lg">Can View</p>
           </Stack>
           <Stack>
             <small className="opacity-40 text-sm">Status</small>
-            <p className="text-lg opacity-80">Active</p>
+            <p className="text-lg">Active</p>
           </Stack>
           <Stack>
             <small className="opacity-40 text-sm">Password</small>
-            <p className="text-lg opacity-80">********</p>
+            <p className="text-lg">********</p>
           </Stack>
         </Box>
         {/* END BOTTOM */}

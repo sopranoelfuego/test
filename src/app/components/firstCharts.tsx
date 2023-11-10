@@ -105,8 +105,8 @@ const FirstCharts = () => {
   };
 
   return (
-    <div className="w-full rounded-md max-h-[26rem]  my-4 flex items-center px-0 justify-center overflow-hidden  bg-white">
-      <div className="flex-[60]  overflow-hidden p-6">
+    <div className="w-full rounded-md max-h-[26rem] h-[26rem]  my-4 flex items-center px-0 justify-center overflow-hidden  bg-white">
+      <div className="flex-[60] h-full overflow-hidden p-6">
         <Box className="flex items-center justify-between md:pr-8">
           <Box className="flex items-center gap-5 justify-center">
             <Box className="p-3 bg-orange-100 rounded-full">
@@ -155,7 +155,7 @@ const FirstCharts = () => {
         <div className="block absolute top-[50%] w-3 h-3 right[2px] rounded-full border-l-white bg-white border-2 border-solid z-10 border-gray-200"></div>
       </div>
 
-      <Box className="flex flex-[40]  items-center justify-center gap-6 p-6">
+      <Box className="flex flex-[40] h-full  items-center justify-center gap-6 p-6">
         <Box className=" ">
           <ApexChart
             // @ts-ignore

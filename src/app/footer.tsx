@@ -7,9 +7,7 @@ const Footer = () => {
   const path = usePathname();
   return (
     <Box
-      className={`h-20 w-full border ${
-        path?.toString().trim() !== "" ? "flex" : "hidden"
-      } border-t-2  items-center  justify-start px-12 mr-1 border-box`}
+      className={`h-20 w-full border flex border-t-2  items-center  justify-start px-12 mr-1 border-box`}
     >
       <Box className="w-full flex items-center text-base opacity-80 justify-start gap-2   ">
         <p>&copy; 2020 Shora</p>
