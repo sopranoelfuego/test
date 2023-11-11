@@ -29,13 +29,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Box className=" min-h-screen box-border flex bg-grey ">
-          <Box className="bg-white pt-8   border px-3 border-r flex flex-col gap-20 items-center justify-items-start">
+        <Box className=" min-h-screen max-h-screen box-border flex bg-grey ">
+          <Box className="bg-white pt-8    border px-3 border-r hidden md:flex flex-col gap-20 items-center justify-items-start">
             <Link href="/" className="hover:cursor-pointer sticky top-14">
               <MdFontDownload size={42} className="text-purple-400" />
             </Link>
 
-            <Box className="flex flex-col w-23 sticky top-40 gap-4  ">
+            <Box className="flex flex-col w-20 sticky top-40 gap-4  ">
               {sideBarData?.map((item) => (
                 <SideBarItem
                   key={item.id}
@@ -46,7 +46,7 @@ export default function RootLayout({
               ))}
             </Box>
           </Box>
-          <Box className="flex flex-col flex-1 gap-9  ">
+          <Box className="flex flex-col flex-1 gap-2 md:gap-4 lg:gap-9 ">
             <Header />
             {children}
             {path.split('/').pop()?.trim().length !== 0 && <Footer />}

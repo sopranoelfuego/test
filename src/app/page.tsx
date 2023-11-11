@@ -6,7 +6,7 @@ import ThirdCharts from "./components/thirdCharts";
 
 export default function Home() {
   return (
-    <Box className=" box-border flex flex-1 mx-12    overflow-hidden">
+    <Box className=" box-border flex flex-1 sm:mx-2 md:mx-2 lg:mx-12    overflow-hidden">
       <Box className="w-full overflow-y-auto ">
         <Box className="w-full opacity-80 flex items-center justify-between">
           {/* right */}

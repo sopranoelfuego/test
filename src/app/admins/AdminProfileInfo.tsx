@@ -12,7 +12,7 @@ function AdminProfileInfo() {
       <Badge
         overlap="circular"
         anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
-        className="z-10"
+        className="z-10 sticky top-[5rem]"
         badgeContent={
           <IconButton className="bg-white p-3 z-10 hover:bg-white shadow-lg">
             <MdEdit size={18} className="text-black z-10" />
@@ -29,7 +29,7 @@ function AdminProfileInfo() {
       {/* ===== INFO BLOC HERE =================*/}
       <Box className="flex-1 mt-3 flex h-full  flex-col">
         {/* TOP */}
-        <Box className="w-full flex flex-col justify-between h-[7rem]">
+        <Box className="w-full  flex flex-col sticky top-[5rem] z-10 bg-white justify-between h-[7rem]">
             {/* tOP */}
             <Stack className="flex w-full" direction="row" alignItems="flex-start" justifyContent="space-between">
             <Box>
@@ -53,7 +53,7 @@ function AdminProfileInfo() {
         </Box>
         {/* END TOP */}
         {/* BOTTOM */}
-        <Box className="flex-1 flex flex-col justify-evenly ">
+        <Box className="flex-1 flex flex-col justify-evenly max-h-[44rem] overflow-y-auto">
           <Stack>
             <small className="opacity-40 text-sm">Phone Number</small>
             <p className="text-lg">+257 79 28 4124</p>

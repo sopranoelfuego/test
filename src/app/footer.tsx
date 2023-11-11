@@ -1,10 +1,5 @@
-"use client";
 import Box from "@mui/material/Box";
-
-import { usePathname } from "next/navigation";
-
 const Footer = () => {
-  const path = usePathname();
   return (
     <Box
       className={`h-20 w-full border flex border-t-2  items-center  justify-start px-12 mr-1 border-box`}

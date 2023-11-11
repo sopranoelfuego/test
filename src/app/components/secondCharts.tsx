@@ -178,7 +178,7 @@ const SecondCharts = () => {
           <MdExpandMore size={21} />
         </Box>
 
-        <Box className="flex w-full items-center justify-center gap-6 p-6 ">
+        <Box className="flex w-full items-center justify-center gap-6  ">
           <Box className="">
             <ApexChart
               // @ts-ignore
@@ -202,7 +202,7 @@ const SecondCharts = () => {
                 <div className="w-3 h-2 rounded-md bg-[#FD8499] p-0 m-0"></div>
                 <p className="opacity-70 text-base">Electricity</p>
               </div>
-              <p className="text-base font-semibold">2,320,920 BIF</p>
+              <p className="text-base font-semibold whitespace-nowrap">2,320,920 BIF</p>
             </Box>
             <Box className="flex flex-col justify-end  items-start">
               <div className="flex items-center gap-2  justify-end">

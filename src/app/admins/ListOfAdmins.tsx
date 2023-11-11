@@ -7,7 +7,7 @@ import SingleAdmin from "./SingleAdmin";
 
 function ListOfAdmins() {
   return (
-    <div className="w-2/5  rounded-md overflow-y-auto max-w-[33rem] max-h-[44rem] flex flex-col bg-white h-full">
+    <div className="w-full md:w-2/5  rounded-md overflow-y-auto  max-h-max md:max-h-[44rem] flex flex-col bg-white h-full">
       <HeaderSearchAdmin />
       
         {adminsData.map((ad) => (

@@ -13,7 +13,7 @@ function AdminHeaderProfile() {
 
   return (
     
-      <Box className="w-full h-20 mb-0  pb flex items-center px-6 justify-between">
+      <Box className="w-full h-20 mb-0 sticky top-0 bg-white z-50  flex items-center px-6 justify-between">
         <Box
           sx={{
             
