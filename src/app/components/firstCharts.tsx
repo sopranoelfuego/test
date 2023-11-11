@@ -105,8 +105,8 @@ const FirstCharts = () => {
   };
 
   return (
-    <div className="w-full rounded-md max-h-[26rem] h-[26rem]  my-4 flex items-center px-0 justify-center overflow-hidden  bg-white">
-      <div className="flex-[60] h-full overflow-hidden p-6">
+    <div className="w-full rounded-md max-h-[26rem] h-[24rem]  my-4 flex items-center px-0 justify-center overflow-hidden  bg-white">
+      <div className="flex-[60] h-full overflow-hidden flex flex-col justify-between  p-6">
         <Box className="flex items-center justify-between md:pr-8">
           <Box className="flex items-center gap-5 justify-center">
             <Box className="p-3 bg-orange-100 rounded-full">

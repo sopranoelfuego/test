@@ -12,7 +12,6 @@ import {
 } from "react-icons/md";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import {usePathname} from "next/navigation"
 
 import IconButton from "@mui/material/IconButton";
 import Link from 'next/link'
@@ -21,7 +20,6 @@ interface IProps {
 }
 
 const SingleAdmin = ({ admin }: IProps): React.ReactNode => {
-  const path=usePathname()
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {

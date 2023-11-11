@@ -115,7 +115,7 @@ const SecondCharts = () => {
 
   return (
     <div className="w-full rounded-md max-h-[26rem] h-[26rem]  flex items-center px-0 justify-center overflow-hidden  bg-white">
-      <div className="flex-[60] h-full  flex flex-col overflow-hidden p-6">
+      <div className="flex-[60] h-full  flex flex-col justify-between overflow-hidden p-6">
         <Box className="flex items-center  justify-between md:pr-8">
           <Box className="flex items-center gap-5 justify-center">
             <Box className="p-3 bg-orange-100 rounded-full">
@@ -156,7 +156,7 @@ const SecondCharts = () => {
             </Box>
           </Box>
         </Box>
-        <Box className="w-full flex-1  max-w-[56rem]">
+        <Box className="w-full max-w-[56rem]">
 
         <ApexChart
           //   @ts-ignore

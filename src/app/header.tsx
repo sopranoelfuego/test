@@ -10,7 +10,7 @@ import { MdNotificationsNone,MdKeyboardArrowDown } from "react-icons/md";
 const Header = () => {
    const path=usePathname()
   return (
-    <Box className="flex-1 sticky top-0 z-20 bg-white max-h-20 lg:max-h-24 px-12 flex justify-between items-center">
+    <Box className="flex-1 sticky top-0 z-20 bg-white max-h-20  lg:max-h-24 px-12 flex justify-between items-center">
       {/* @ts-ignore */}
       <p className="text-3xl font-extrabold">{path.split('/').pop()?.trim().length === 0?"Dashboard":path?.split('/').pop()?.toString().charAt(0).toUpperCase() + path?.split('/').pop()?.toString()?.slice(1)}</p>
       <Box className="flex h-full  items-center justify-between min-w-fit">
